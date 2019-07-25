@@ -7,12 +7,13 @@
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
     "build": "webpack --mode=production --config ./build/webpack.config.js",
     "lint": "eslint src --ext .js,.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": ["TypeScript"],
   "author": "liangxiao",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^24.0.15",
     "@types/jquery": "^3.3.29",
     "@types/source-map": "^0.5.2",
     "@typescript-eslint/eslint-plugin": "^1.10.2",
@@ -22,6 +23,8 @@
     "eslint": "^5.16.0",
     "fork-ts-checker-webpack-plugin": "^1.3.7",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
     "webpack": "^4.32.2",
