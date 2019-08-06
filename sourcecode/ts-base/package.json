@@ -1,5 +1,5 @@
 {
-  "name": "ts_in_action",
+  "name": "ts_base",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.ts",
@@ -9,7 +9,9 @@
     "lint": "eslint src --ext .js,.ts",
     "test": "jest"
   },
-  "keywords": ["TypeScript"],
+  "keywords": [
+    "TypeScript"
+  ],
   "author": "liangxiao",
   "license": "ISC",
   "devDependencies": {
