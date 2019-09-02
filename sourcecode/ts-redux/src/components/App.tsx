@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Layout, Menu, LocaleProvider } from 'antd';
+import { Layout, Menu, ConfigProvider } from 'antd';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
 
 import Employee from './employee';
@@ -11,7 +11,7 @@ const { Header, Content, Footer } = Layout;
 
 const App = ({ match }: any) => {
   let defaultKey = match.url.replace('/', '') || 'employee';
-  return <LocaleProvider locale={zh_CN}>
+  return <ConfigProvider locale={zh_CN}>
     <Layout>
       <Header>
         <Menu
@@ -33,7 +33,7 @@ const App = ({ match }: any) => {
       </Content>
       <Footer className="footer">TypeScript in Action</Footer>
     </Layout>
-  </LocaleProvider>
+  </ConfigProvider>
 }
 
 export default App;
