@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "vue": "^2.6.10",
-    "vue-employee-query": "^1.0.1"
+    "vue-employee-query": "^1.0.1",
+    "vue-style-loader": "^4.1.2"
   }
 }
